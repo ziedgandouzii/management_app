@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#C6C6C6"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C6C6C6"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/product_id_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="#000"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/product_libelle_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:text="Libelle 1"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/product_id_txt"
+                app:layout_constraintTop_toTopOf="@+id/product_id_txt" />
+
+            <TextView
+                android:id="@+id/product_description_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description 1"
+                app:layout_constraintStart_toStartOf="@+id/product_libelle_txt"
+                app:layout_constraintTop_toBottomOf="@+id/product_libelle_txt" />
+
+            <TextView
+                android:id="@+id/product_photo_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="216dp"
+                android:text="Photo 1"
+                app:layout_constraintStart_toStartOf="@+id/product_description_txt"
+                app:layout_constraintTop_toBottomOf="@+id/product_description_txt" />
+
+            <TextView
+                android:id="@+id/product_prix_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="120"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/product_quantite_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity 1"
+                app:layout_constraintStart_toStartOf="@+id/product_prix_txt"
+                app:layout_constraintTop_toBottomOf="@+id/product_prix_txt" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
